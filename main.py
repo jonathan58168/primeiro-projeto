@@ -101,11 +101,12 @@ def menu():
             listarTodosAlunos()
         elif opcao == '3':
             listarTodosAlunos()
-            matricula = input('Digite a matricula do aluno que deseja remover: ')
+            matricula = int(input('Digite a matricula do aluno que deseja remover: '))
             removerAluno(matricula)
             listarTodosAlunos()
         elif opcao == '4':
-            matricula = input('Digite o número da matricula do aluno: ')
+            print('--- BUSCAR ALUNOS ---')
+            matricula = int(input('Digite o número da matricula do aluno: '))
             consultarAluno(matricula)
         elif opcao == '5':
             listarTodosAlunos()
