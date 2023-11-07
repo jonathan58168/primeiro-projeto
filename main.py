@@ -93,7 +93,8 @@ def menu():
             listarTodosAlunos()
         elif opcao == '2':
             print('--- EDITAR DADOS DO ALUNO ---')
-            matricula = int(input('Digite a matricula: '))
+            listarTodosAlunos()
+            matricula = int(input('Digite o número da matricula do aluno que deseja editar: '))
             nome = input('Digite o nome do aluno: ')
             idade = input('Digite a idade do aluno: ')
             curso = input('Digite o nome do curso: ')
@@ -101,7 +102,7 @@ def menu():
             listarTodosAlunos()
         elif opcao == '3':
             listarTodosAlunos()
-            matricula = int(input('Digite a matricula do aluno que deseja remover: '))
+            matricula = int(input('Digite o número da matricula do aluno que deseja remover: '))
             removerAluno(matricula)
             listarTodosAlunos()
         elif opcao == '4':
